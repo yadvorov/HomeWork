@@ -14,7 +14,8 @@ import s2 from '../../s1-main/App.module.css'
 * 9 - в файле Affair.tsx дописать типизацию пропсов
 * 10 - в файле Affair.tsx дописать функции deleteCallback и использовать
 * 11 - в файле Affair.tsx отобразить приходящие данные
-* */
+* 
+*/
 
 // types
 export type AffairPriorityType = any // need to fix any
@@ -34,8 +35,6 @@ const defaultAffairs: any = [ // need to fix any
     {_id: 5, name: 'html & css', priority: 'middle'},
 ]
 
-// pure helper functions
-export const filterAffairs = (affairs: any, filter: any): any => { // need to fix any
 
 
     return affairs // need to fix
@@ -48,12 +47,10 @@ export const deleteAffair = (affairs: any, _id: any): any => { // need to fix an
 function HW2() {
     const [affairs, setAffairs] = useState<any>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
-
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: any) => { // need to fix any
         // need to fix
     }
-
     return (
         <div id={'hw2'}>
             <div className={s2.hwTitle}>Homework #2</div>
@@ -62,7 +59,6 @@ function HW2() {
                     data={filteredAffairs}
                     setFilter={setFilter}
                     deleteAffairCallback={deleteAffairCallback}
-                    filter={filter}
                 />
             </div>
         </div>
