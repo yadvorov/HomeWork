@@ -17,6 +17,10 @@
     "@types/uuid": "8.3.4",
     "add": "^2.0.6",
     "axios": "0.27.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -35,7 +39,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [

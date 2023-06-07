@@ -4,13 +4,6 @@
     padding: 48px 0;
     border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
-.sendForm::after {
-content: '';
-height: 2px;
-background-color: red;
-width: 100%;
-
-}
 
 .textarea {
     width: 100%;
